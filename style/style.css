@@ -1,0 +1,213 @@
+
+
+
+:root {
+    --branco-principal: #FFFFFF;
+    --cinza-secundario: #C0C0C0;
+    --botao-azul: #167BF7;
+    --cor-de-fundo: #00030C;
+    --fonte-principal: 'Inter';
+    --botao-azul-efeito:#3C92fa;
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    color: var(--branco-principal);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+    height: 100vh;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.principal {
+    background-image: url("../img/Background.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+    text-align: center;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: start; /* Alinha no topo */
+}
+
+.container__botao {
+    background-color: var(--botao-azul);
+    border-radius: 5px;
+    border: 1em 1em;
+    padding: 1em;
+    color: var(--branco-principal);
+    display: block;
+    text-decoration: none;
+    display: block;  /* Faz a âncora se comportar como um bloco */
+    width: 32em;  /* Define a largura */
+    margin: 1em auto; /* Centraliza */
+    text-align: center; /* Garante que o texto fique no meio */
+}
+
+.container__botao:hover {
+    background-color: var(--botao-azul-efeito);
+    color: var(--cor-de-fundo);
+    font-weight: bold;
+}
+
+.botao_secundario {
+    background-color: transparent;
+    border: var(--branco-principal) solid;
+    border-radius: 5px;
+    padding: 1em;
+    color: var(--branco-principal);
+    display: block;
+    text-decoration: none;
+    display: block;  /* Faz a âncora se comportar como um bloco */
+    width: 32em;  /* Define a largura */
+    margin: 1em auto; /* Centraliza */
+    text-align: center; /* Garante que o texto fique no meio */
+}
+
+.botao_secundario:hover {
+    background-color: var(--botao-azul-efeito);
+    color: var(--cor-de-fundo);
+    font-weight: bold;
+}
+
+.container__aviso {
+    font-size: 12px;
+    color: var(--cinza-secundario);
+}
+
+.container__titulo {
+    font-size: 28px;
+    font-weight: 700;
+    margin:0
+}
+
+.container__imagem {
+    margin: 1.25em 0 1em 0;
+}
+
+.container__conteudo {
+    margin-left: 3.375em;
+    margin-top: 7.81em;
+}
+
+.imagem_secundaria {
+    width: 80%;
+    margin-left: 12%;
+}
+
+.secundario{
+    align-items: center;
+}
+
+.descricao__titulo {
+    font-family: (var(--fonte-principal));
+    font-weight: 700;
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+.descricao__texto__secundario {
+    color: var(--cinza-secundario);
+        text-align: justify;
+        line-height: 1.5; /* Aumenta o espaçamento entre as linhas para melhorar a leitura */
+        word-break: break-word; /* Quebra as palavras quando necessário */
+}
+
+.botao__terciario {
+    align-items: center;
+}
+
+.conteudo_secundario{
+    padding: 2em;
+}
+
+.secundaria_imagem {
+ width: 90%; /* Aumenta proporcionalmente */
+ height: auto;
+}
+
+.counteudo_terciario {
+    max-width: 600px; /* Define um limite de largura */
+    margin: 0 auto; /* Centraliza o texto na página */
+    font-family: var(--fonte-principal);
+    color: var(--cinza-secundario);
+}
+
+.imagem_terciaria {
+    width: 80%;
+    margin: 0;
+    padding: 5em;
+}
+
+.Lista__dispositvos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+    margin: 5em 0;
+    padding-bottom: 5em;
+}
+
+.dispostivos {
+    text-align: center;
+}
+
+.dispositvos__titulo {
+    font-family: var(--fonte-principal);
+    font-size: 48px;
+}
+
+.dispositivos_texto {
+    font-family: var(--fonte-principal);
+    color: var(--branco-principal);
+    font-size: 32px;
+}
+
+.rodape {
+    text-align: center;
+}
+
+.rodape__lista {
+    display: flex;
+    justify-content: center;
+    gap: 4em;
+    color: var(--branco-principal);
+    list-style: none;
+}
+
+.rodape__logo{
+    margin: 2em;
+}
+
+.rodape__link {
+    color: white;
+    text-decoration: none;
+}
+
+.rodape__link:hover {
+    color: var(--botao-azul)
+}
+
+.rodape__link:active {
+    color: purple;
+}
+
+.rodape__texto {
+    margin: 2em;
+    color: var(--cinza-secundario);
+}
+
+.rodape__texto_final {
+    margin-bottom: 2em;
+    color: var(--cinza-secundario);
+}
